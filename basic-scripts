@@ -1,0 +1,6 @@
+# to get a new IP from TOR network
+
+pkill -SIGHUP tor 
+
+killall -SIGHUP tor
+
