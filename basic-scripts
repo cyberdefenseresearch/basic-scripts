@@ -1,6 +1,8 @@
 # to get a new IP from TOR network
-
 pkill -SIGHUP tor 
-
 killall -SIGHUP tor
+
+
+# sqlmap through proxychains proxies (default is tor)
+proxychains sqlmap -u http://www.whatever.you.want.here.fr
 
