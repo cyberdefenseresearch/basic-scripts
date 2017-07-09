@@ -9,7 +9,7 @@ proxychains sqlmap -u http://www.whatever.you.want.here.fr
 while true; do proxychains firefox https://www.youtube.com/watch?v=ID_OF_VIDEO -new-window;  done
 while true; do killall -SIGHUP tor; pkill -SIGHUP firefox; sleep 15; done
 
-#sqlmap through proxychains with maximum level and maximum risk
+#sqlmap on GET parameters through proxychains with maximum level and maximum risk
 proxychains sqlmap --level=5 --risk=3 -u http://www.whatever-you-want-here.org/index.php/page?parameter=value&otherone=othervalue
 
 
