@@ -5,7 +5,7 @@ killall -SIGHUP tor
 # sqlmap through proxychains proxies (default is tor)
 proxychains sqlmap -u http://www.whatever.you.want.here.fr
 
-#combo to boost views on a youtube video
+#combo to boost views on a youtube video (that may require modifications because of different funky behaviors of firefox-esr)
 while true; do proxychains firefox https://www.youtube.com/watch?v=ID_OF_VIDEO -new-window;  done
 while true; do killall -SIGHUP tor; pkill -SIGHUP firefox; sleep 15; done
 
