@@ -1,3 +1,10 @@
+#enable metasploit (msfconsole) through proxychains for local postgresql database connection
+#add the following line to the /etc/proxychains.conf ( gedit /etc/proxychains.conf )
+localnet 127.0.0.1 000 255.255.255.255
+
+#launch firefox through proxychains and get newly got ip address
+proxychains firefox http://www.whatismyipaddress.com
+
 # to get a new IP from TOR network
 pkill -SIGHUP tor 
 killall -SIGHUP tor
