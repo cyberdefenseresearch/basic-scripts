@@ -22,3 +22,6 @@ proxychains sqlmap --level=5 --risk=3 -u http://www.whatever-you-want-here.org/i
 #sqlmap on POST parameters through proxychains
 proxychains sqlmap -u http://www.whateveryouwanthere.org/index.php/page?getparam=getvalue&event=page2 --method="POST" --data="postparam1=postvalue1&postparam2=postvalue2" -p "postparam1" -p "postparam2"
 
+#entire internet masscan through proxychains on some defined ports, with getting banners, defined rate, pfring (does that work really?) and output to file newmasscan.txt
+proxychains masscan -p80,443,8080,9090,8090,9090 0.0.0.0/0 --banner --rate=300 --exclude 255.255.255.255 -pfring > newmasscan.txt
+
