@@ -1,7 +1,8 @@
 # basic-scripts
 Basic scripts and commands for beginners in cyberdefense industry
 
-pkill -SIGHUP tor
-killall -SIGHUP tor
+Many stuff are experimental !
+
+Use it at your own risk.
 
 
