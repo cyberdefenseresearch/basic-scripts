@@ -26,5 +26,5 @@ proxychains sqlmap -u http://www.whateveryouwanthere.org/index.php/page?getparam
 proxychains masscan -p80,443,8080,9090,8090,9090 0.0.0.0/0 --banner --rate=300 --exclude 255.255.255.255 -pfring > newmasscan.txt
 
 #sfuzz through proxychains to port 80 in TCP mode, verbose, and config file is basic.http
-sfuzz -S www.__whateveryouwant__.com -T -p 80 -v -f /usr/share/sfuzz-db/basic.http
+proxychains sfuzz -S www.__whateveryouwant__.com -T -p 80 -v -f /usr/share/sfuzz-db/basic.http
 
