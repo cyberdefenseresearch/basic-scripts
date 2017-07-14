@@ -28,3 +28,5 @@ proxychains masscan -p80,443,8080,9090,8090,9090 0.0.0.0/0 --banner --rate=300 -
 #sfuzz through proxychains to port 80 in TCP mode, verbose, and config file is basic.http
 proxychains sfuzz -S www.__whateveryouwant__.com -T -p 80 -v -f /usr/share/sfuzz-db/basic.http
 
+#nmap through proxychains with all ports testing
+proxychains nmap 192.168.0.1 -p0-65535
